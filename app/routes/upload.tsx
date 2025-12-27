@@ -49,10 +49,11 @@ const upload = () => {
                              ? feedback.message.content 
                              : feedback.message.content[0].text;
         resumeData.feedback = JSON.parse(feedbackText);
+         setStatusText('Analyzing your feedbac...');
         await kv.set(`resume:${uuid}`, JSON.stringify(resumeData));
         setStatusText('Your resume has been analyzed, redirecting....');
         console.log('data', resumeData)
-        // navigate(`/resume/${uuid}`);        
+        navigate(`/resume/${uuid}`);        
        
     }   
 
