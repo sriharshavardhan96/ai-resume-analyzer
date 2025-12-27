@@ -6,7 +6,7 @@ import Summary from "~/components/Summary";
 import { usePuterStore } from "~/lib/puter";
 
 export const meta = () => ([
-    { title: 'Resumind | Review' },
+    { title: 'ResumeMirror | Review' },
     { name: 'description', content: 'Overview of your resume' },
 ])
 
